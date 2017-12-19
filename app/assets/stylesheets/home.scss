@@ -8,7 +8,8 @@ nav{
 }
 
 nav a{
-    color: white;
+    color: white !important;
+    text-decoration: none !important;
 }
 
 body {
@@ -64,6 +65,11 @@ p {
   margin: auto;
   text-align: center;
   padding-bottom: 10px;
+}
+
+#les_artistes .card a { 
+  text-decoration: none;
+  color: white;
 }
 
 #les_artistes .card img
@@ -211,6 +217,6 @@ p {
 }
 
 button { 
-background-color:blue !important;  
-color: black;
+  background-color:blue !important;  
+  color: black;
 }
