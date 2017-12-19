@@ -1,3 +1,169 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+nav{
+    background-color: #3c3d41;
+    padding-top: 30px;
+}
+
+nav a{
+    color: white;
+}
+
+body {
+  background: url(asset-path("artstreethome_home.jpg")) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  margin: 40px auto;
+  background: rgba(22,22,22, 0.5);
+  width: 100%;
+  max-width: 960px;
+  border-radius: 5px;
+  margin-top: 250px;
+  padding-bottom: 32px;
+  display: flex;
+}
+
+.content h1, h1 a {
+  min-height: 120px;
+  width: 100%;
+  max-width: 960px;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 40px;
+}
+
+p {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.cardholder { 
+  display: flex;
+  justify-content: space-around;
+  wrap: wrap;
+  margin-top: 30px;
+}
+
+#les_artistes .card { 
+  width: 30rem;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#les_artistes .card img
+{ width: inherit;
+  height: inherit;
+}
+
+.jumbotron
+{ margin: 0;
+}
+
+.jumbotron h2
+{ text-align: center;
+  margin: auto; 
+}
+
+
+#la_carte .jumbotron{
+  background-color: white !important;
+  margin-top: -30px;
+}
+
+#la_carte iframe{
+  margin-top: 30px;
+  width: 100%;
+  height: 600px;
+}
+
+#myFooter {
+    background-color: #3c3d41;
+    color: white;
+    padding-top: 30px;
+    margin-top: -30px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #333333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 60px;
+}
+
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+    text-align: center;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter h2 a{
+    font-size: 50px;
+    text-align: center;
+}
+
+#myFooter .social_networks {
+    text-align: center;
+}
+
+#myFooter a i {
+    font-size: 4rem;
+    padding-right: 30px;
+    color: #ccc;
+}
+
+
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}

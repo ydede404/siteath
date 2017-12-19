@@ -5,18 +5,28 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-lZV2BQHhlIeSX0KKlcV52T0RM5GEd+q4DbVOu45FyIjjgDGbbaHaVMkUMviDDeOU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/89d4474e84.js"></script>
+    
   </head>
+   
+  <body data-spy="scroll" data-target=".navbar" data-offset="50"> 
+        <%= render 'layouts/header' %>  
+    <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
 
-  <body>
 
-  	<% if notice %>
-	  <p class="alert alert-success"><%= notice %></p>
-	<% end %>
-	<% if alert %>
-	  <p class="alert alert-danger"><%= alert %></p>
-	<% end %>
-      <%= render 'layouts/header' %>
     <%= yield %>
       <%= render 'layouts/footer' %>
   </body>

@@ -1,10 +1,41 @@
-<p class="navbar-text pull-right">
-<% if user_signed_in? %>
-  Logged in as <strong><%= current_user.email %></strong>.
-  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-<% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-<% end %>
-</p>
+<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+<header id="myHeader">
+<nav id="navbar-example2" class="navbar navbar-dark">
+  <a class="navbar-brand" href="/">Art Street Home</a>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#le_concept">Le concept</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#les_artistes">Les artistes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#la_carte">La carte</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">        	
+      	<% if user_signed_in? %>
+			  Logged in as <strong><%= current_user.email %></strong>.
+			       <div class="dropdown-menu">
+			  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'dropdown-item' %> 
+			  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'dropdown-item'  %>
+			  	</div>
+			<% else %>
+				Se connecter
+					<div class="dropdown-menu">
+			  <%= link_to "Sign up", new_user_registration_path, :class => 'dropdown-item'  %> 
+			  <%= link_to "Login", new_user_session_path, :class => 'dropdown-item'  %></div>
+			<% end %></a>
+    </li>
+  </ul>
+</nav>
+</header>
+
+
+
+   
+
+
+
+
+
