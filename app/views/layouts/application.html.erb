@@ -18,14 +18,14 @@
   </head>
    
   <body data-spy="scroll" data-target=".navbar" data-offset="50"> 
-        <%= render 'layouts/header' %>  
+  <%= render 'layouts/header' %>   
+ 
     <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
   <% end %>
   <% if alert %>
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
-
 
     <%= yield %>
       <%= render 'layouts/footer' %>
