@@ -12,6 +12,16 @@ nav a{
     text-decoration: none !important;
 }
 
+nav .nav-item a:hover{
+    color: #3c3d41 !important;
+    text-decoration: none !important;
+}
+
+nav .dropdown-menu{
+    text-decoration: none !important;
+    background-color: #3c3d41 !important;
+}
+
 body {
   background: url(asset-path("artstreethome_home.jpg")) no-repeat center center fixed;
   -webkit-background-size: cover;
