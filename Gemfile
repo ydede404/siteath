@@ -3,6 +3,7 @@ gem 'activeadmin'
 
 # Plus integrations with:
 gem 'devise'
+gem 'devise-i18n'
 gem 'cancan' # or cancancan
 gem 'draper'
 gem 'pundit'
